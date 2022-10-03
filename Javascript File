@@ -1,0 +1,8 @@
+function updateCombatPower() {
+  // convert Cognition into Combat Power
+  
+ var objBase = document.getElementById("objBase").value;
+ var proBase = document.getElementById("proBase").value;
+ var combinedCognition = (objBase + proBase).value;
+  document.getElementById("cognition").value = Math.floor((objBase+proBase)*5);
+}
