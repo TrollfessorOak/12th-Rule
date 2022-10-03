@@ -1,0 +1,84 @@
+<link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container">
+  
+  <div class="row">
+  
+    <div class="col-4">
+      
+      <table class="table">
+        <tr>
+          <th>Cognition</th>
+          <th>Base</th>
+          <th>Misc</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td>Objection</td>
+          <td><input type="number" value="1" id="objBase" onchange="updateCombatPower()"></td>
+          <td><input type="number" placeholder="0" id="objMisc"></td>
+          <td><input type="number" placeholder="0" id="objTotal"></td>
+        </tr>
+        <tr>
+          <td>Projection</td>
+          <td><input type="number" value="1" id="proBase" onchange="updateCombatPower()"></td>
+          <td><input type="number" placeholder="0" id="proMisc"></td>
+          <td><input type="number" placeholder="0" id="proTotal"></td>
+        </tr>
+        <tr>
+          <td>Willpower</td>
+          <td><input type="number" value="1" id="willbase" onchange="updateModifiers()"></td>
+          <td><input type="number" placeholder="0" id="willMod"></td>
+          <td><input type="number" placeholder="0" id="willTotal"></td>
+        </tr>
+        <tr>
+          <td>Interpretation</td>
+          <td><input type="number" value="1" id="intScore" onchange="updateModifiers()"></td>
+          <td><input type="number" placeholder="0" id="intMod"></td>
+          <td><input type="number" placeholder="0" id="intTotal"></td>
+        </tr>
+        <tr>
+          <td>Archetype</td>
+          <td><input type="number" value="1" id="archScore" onchange="updateModifiers()"></td>
+          <td><input type="number" placeholder="0" id="archMod"></td>
+          <td><input type="number" placeholder="0" id="archTotal"></td>
+        </tr>
+        <tr>
+      </table>
+      
+    </div>
+    
+    <div class="col-4">
+      
+      <h2>Used Combat Power</h2>
+      
+      <br>
+      
+      <input type="number" id="usedCombatPower" min="0" max="3000" value="0" onchange="usedCombatPower();">
+      
+      <tr>Cognition</tr>
+      
+      <br>
+      
+      <input type="number" id="cognition" value="0" onchange="usedCombatPower();">
+             
+      
+    </div>
+    
+    <div class="col-4">
+      
+      <h2>Combat Power</h2>
+      
+      <br>
+      
+      <input type="number" id="combatPower" min="0" max="3000" value="0" 
+      
+    </div>
+      
+      
+    </div>
+  
+  </div>
+  
+</div>
+
